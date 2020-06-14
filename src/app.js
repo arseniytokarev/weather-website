@@ -63,7 +63,7 @@ app.get('/weather', (req, res) => {
                         location,
                         iconsrc: data.icon,
                         forecast: `${data.weather_descriptions}. It is currently 
-                        ${data.temperature} °C, feels 
+                        ${data.temperature} °C. It feels 
                         like ${data.feels_like}°C degrees. The humidity is ${data.humidity}%.`
                     })
                 }
@@ -92,5 +92,5 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(port, () => console.log('Server is running on ' + port))
+app.listen(port, () => console.log('Server is running on '))
 
